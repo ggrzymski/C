@@ -1,0 +1,389 @@
+
+Case 1: Checking for proper alphanumeric parsing ----------------------
+
+/index output.txt test.txt
+
+<list> enjoy
+test.txt 1 
+</list>
+<list> i
+test.txt 1 
+</list>
+<list> kyrim
+test.txt 1 
+</list>
+<list> pla
+test.txt 1 
+</list>
+<list> s
+test.txt 1 
+</list>
+<list> ying
+test.txt 1 
+</list>
+
+Case 2: checking for proper head reinsertion and alignment of token parsing ------------------------
+
+/index output.txt test2.txt
+
+<list> a
+test2.txt 1 
+</list>
+<list> and
+test2.txt 1 
+</list>
+<list> epic
+test2.txt 1 
+</list>
+<list> fail
+test2.txt 1 
+</list>
+<list> get
+test2.txt 1 
+</list>
+<list> good
+test2.txt 1 
+</list>
+<list> grade
+test2.txt 1 
+</list>
+<list> hope
+test2.txt 1 
+</list>
+<list> i
+test2.txt 1 
+</list>
+<list> not
+test2.txt 1 
+</list>
+<list> on
+test2.txt 1 
+</list>
+<list> this
+test2.txt 1 
+</list>
+<list> to
+test2.txt 1 
+</list>
+
+Case 3: Checking for repeated counts of names. --------------------------------
+
+/index output.txt test3.txt
+
+<list> a
+test3.txt 2 
+</list>
+<list> about
+test3.txt 2 
+</list>
+<list> all
+test3.txt 1 
+</list>
+<list> and
+test3.txt 4 
+</list>
+<list> because
+test3.txt 1 
+</list>
+<list> commit
+test3.txt 1 
+</list>
+<list> count
+test3.txt 2 
+</list>
+<list> crimes
+test3.txt 2 
+</list>
+<list> criminals
+test3.txt 1 
+</list>
+<list> detective
+test3.txt 1 
+</list>
+<list> detectives
+test3.txt 1 
+</list>
+<list> do
+test3.txt 2 
+</list>
+<list> drive
+test3.txt 1 
+</list>
+<list> else
+test3.txt 1 
+</list>
+<list> everyone
+test3.txt 1 
+</list>
+<list> file
+test3.txt 1 
+</list>
+<list> hope
+test3.txt 1 
+</list>
+<list> i
+test3.txt 3 
+</list>
+<list> in
+test3.txt 1 
+</list>
+<list> is
+test3.txt 3 
+</list>
+<list> it
+test3.txt 1 
+</list>
+<list> its
+test3.txt 1 
+</list>
+<list> keep
+test3.txt 2 
+</list>
+<list> louisiana
+test3.txt 1 
+</list>
+<list> matt
+test3.txt 1 
+</list>
+<list> nice
+test3.txt 2 
+</list>
+<list> not
+test3.txt 3 
+</list>
+<list> of
+test3.txt 1 
+</list>
+<list> repeated
+test3.txt 1 
+</list>
+<list> repeating
+test3.txt 2 
+</list>
+<list> show
+test3.txt 1 
+</list>
+<list> stuff
+test3.txt 2 
+</list>
+<list> the
+test3.txt 2 
+</list>
+<list> there
+test3.txt 1 
+</list>
+<list> things
+test3.txt 1 
+</list>
+<list> this
+test3.txt 2 
+</list>
+<list> to
+test3.txt 2 
+</list>
+<list> true
+test3.txt 2 
+</list>
+<list> up
+test3.txt 1 
+</list>
+<list> who
+test3.txt 1 
+</list>
+<list> why
+test3.txt 1 
+</list>
+<list> woody
+test3.txt 1 
+</list>
+
+Case 4: Testing directory and subdirectory processing --------------------------
+
+/index output.txt cases
+
+<list> a
+cases/hidden/test3.txt 2 cases/test2.txt 1 
+</list>
+<list> about
+cases/hidden/test3.txt 2 
+</list>
+<list> all
+cases/hidden/test3.txt 1 
+</list>
+<list> and
+cases/hidden/test3.txt 4 cases/test2.txt 1 
+</list>
+<list> because
+cases/hidden/test3.txt 1 
+</list>
+<list> commit
+cases/hidden/test3.txt 1 
+</list>
+<list> count
+cases/hidden/test3.txt 2 
+</list>
+<list> crimes
+cases/hidden/test3.txt 2 
+</list>
+<list> criminals
+cases/hidden/test3.txt 1 
+</list>
+<list> detective
+cases/hidden/test3.txt 1 
+</list>
+<list> detectives
+cases/hidden/test3.txt 1 
+</list>
+<list> do
+cases/hidden/test3.txt 2 
+</list>
+<list> drive
+cases/hidden/test3.txt 1 
+</list>
+<list> else
+cases/hidden/test3.txt 1 
+</list>
+<list> enjoy
+cases/test.txt 1 
+</list>
+<list> epic
+cases/test2.txt 1 
+</list>
+<list> everyone
+cases/hidden/test3.txt 1 
+</list>
+<list> fail
+cases/test2.txt 1 
+</list>
+<list> file
+cases/hidden/test3.txt 1 
+</list>
+<list> get
+cases/test2.txt 1 
+</list>
+<list> good
+cases/test2.txt 1 
+</list>
+<list> grade
+cases/test2.txt 1 
+</list>
+<list> hope
+cases/test2.txt 1 cases/hidden/test3.txt 1 
+</list>
+<list> i
+cases/hidden/test3.txt 3 cases/test.txt 1 cases/test2.txt 1 
+</list>
+<list> in
+cases/hidden/test3.txt 1 
+</list>
+<list> is
+cases/hidden/test3.txt 3 
+</list>
+<list> it
+cases/hidden/test3.txt 1 
+</list>
+<list> its
+cases/hidden/test3.txt 1 
+</list>
+<list> keep
+cases/hidden/test3.txt 2 
+</list>
+<list> kyrim
+cases/test.txt 1 
+</list>
+<list> louisiana
+cases/hidden/test3.txt 1 
+</list>
+<list> matt
+cases/hidden/test3.txt 1 
+</list>
+<list> nice
+cases/hidden/test3.txt 2 
+</list>
+<list> not
+cases/hidden/test3.txt 3 cases/test2.txt 1 
+</list>
+<list> of
+cases/hidden/test3.txt 1 
+</list>
+<list> on
+cases/test2.txt 1 
+</list>
+<list> pla
+cases/test.txt 1 
+</list>
+<list> repeated
+cases/hidden/test3.txt 1 
+</list>
+<list> repeating
+cases/hidden/test3.txt 2 
+</list>
+<list> s
+cases/test.txt 1 
+</list>
+<list> show
+cases/hidden/test3.txt 1 
+</list>
+<list> stuff
+cases/hidden/test3.txt 2 
+</list>
+<list> the
+cases/hidden/test3.txt 2 
+</list>
+<list> there
+cases/hidden/test3.txt 1 
+</list>
+<list> things
+cases/hidden/test3.txt 1 
+</list>
+<list> this
+cases/hidden/test3.txt 2 cases/test2.txt 1 
+</list>
+<list> to
+cases/hidden/test3.txt 2 cases/test2.txt 1 
+</list>
+<list> true
+cases/hidden/test3.txt 2 
+</list>
+<list> up
+cases/hidden/test3.txt 1 
+</list>
+<list> who
+cases/hidden/test3.txt 1 
+</list>
+<list> why
+cases/hidden/test3.txt 1 
+</list>
+<list> woody
+cases/hidden/test3.txt 1 
+</list>
+<list> ying
+cases/test.txt 1 
+</list>
+
+Case 5: Proper descending order of file and limit 5 records -----------------------------------
+
+/index output.txt cases2
+
+<list> repeat
+cases2/file7.txt 6 cases2/file6.txt 4 cases2/file4.txt 3 cases2/file.dat 3 cases2/file3.dat 2 
+</list>
+
+Case 6: Testing Big Files-------------------------------------------------
+
+I have provided excerpts from Alice in Wonderland testing. The result in Alice.txt
+
+./index output.txt Alice.txt
+
+0 memory leaks and the words were counted and sorted properly.
+
+Case 7: Error conditions: Non-existing files-------------------------------
+
+/index output.txt alice.txt
+
+Error: File/Folder doesn't exist
+
+/index output.txt case
+
+Error: File/Folder doesn't exist
+

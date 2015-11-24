@@ -1,0 +1,178 @@
+Input: " " "today is a beautiful day"
+
+Output: 
+today
+is
+a
+beautiful
+day
+
+Input: "/?" "/usr/local?/bin? share"
+
+Output:
+usr
+local
+bin
+ share
+
+Input: "" "hello\nworld"
+
+Output: hello[0x0a]world 
+
+Input: "" "help me getup pl\tea\re"
+
+Output: help me getup pl[0x09]ea[0x0d]e
+
+Input: "" ""
+Output:
+
+Input: "testing"
+Output: Error: Invalid Amount of Arguments
+
+Input: " \n?/" "/usr\n/local?/bin share"
+Output: 
+usr
+local
+bin
+share
+
+Input: "\"\nn" "/usr/l\nocal?/b\nin share"
+Output:  
+/usr/l
+ocal?/b
+i
+ share
+ 
+Input: "\"" "/usr\"/bin"
+Output:
+/usr
+/bin
+
+Input: "\\/?" "/usr/loc\al?/bi\n sha\re"
+Output: 
+usr
+loc[0x07]l
+bi[0x0a] sha[0x0d]e
+
+Input: " " "he\a\rl\b\l\vo w\"o\frld" 
+Output:
+he[0x07][0x0d]l[0x08]l[0x0b]o
+w[0x22]o[0x0c]rld
+
+Input: "test" "/usr/lecal?/tnt share"
+Output:
+/u
+r/l
+cal?/
+n
+ 
+har
+
+Input: "" "hel\\\lo world"
+Output: hel[0x5c]lo world
+
+Input: "?/" "\\/usr/local?/bin? share"
+Output: 
+usr
+local
+bin
+ share
+ 
+Input: "\?/" "\\/usr/local?/bin? share"
+Output: 
+usr
+local
+bin
+ share
+ 
+Input: "\?/" "/u\sr/l\o\cal/?b\i\n s\h\a\r\e"
+Output:
+usr
+local
+bi[0x0a] sh[0x07][0x0d]e
+
+Input: "\?/" "/u\sr/l\o\cal/?b\in s\har\e"
+Output: 
+usr
+local
+bin share
+
+Input: "n\n?/" "/u\sr/l\o\cnal/?b\i\n s\har\e"
+output: 
+usr
+loc
+al
+bi
+ share
+
+Input: "\b\v\f\r\a\t\/" "/usr/lo\tc\ral/bi\vn sh\b\a\fre\t"
+output:
+usr
+lo
+c
+al
+bi
+n sh
+re
+
+input: "\b\v\f\r\a\t\/" "/usr/lo\tc\ral/bi\vn sh\b\a\fre\t\""
+output: 
+usr
+lo
+c
+al
+bi
+n sh
+re
+[0x22]
+
+input: "\t\f" "he\t\fllo wo\t\nld\r"
+output: 
+he
+llo wo
+[0x0a]ld[0x0d]
+
+input: "\t\f" "he\t\fllo wo\t\nld\r\t\f"
+output:
+he
+llo wo
+[0x0a]ld[0x0d]
+
+input: "r\r?" "hello ro\rld"
+output: 
+hello 
+o
+ld
+
+input: "\t\n\r" "c\t\fheck"
+output: 
+c
+[0x0c]heck
+
+input: "\t\n\r" "c\t\rheck"
+
+output: 
+c
+heck
+
+input: "\t\n\r" "\tfcheck"
+output: 
+fcheck
+
+input: "\t\fcl" "\t\fever"
+output:
+ever
+
+input: "\tcl" "\t\fever"
+output:
+[0x0c]ever
+
+input: "\tt" "\ttoday"
+output: oday
+
+input: "\tt" "t\today"
+output: oday
+
+
+
+
